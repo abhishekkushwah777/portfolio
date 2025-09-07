@@ -1,0 +1,16 @@
+.container{
+  height: 200px;
+  width: 100vw;
+}
+.container:nth-child(3){
+  background-color: #f44336;
+}
+.container:nth-child(4){
+  background-color: #d1f436;
+}
+.container:nth-child(5){
+  background-color: #36f436;
+}
+.container:nth-child(6){
+  background-color: #36bef4;
+}
