@@ -15,7 +15,7 @@ body {
 .home-container {
   height: 100vh;
   width: 100vw;
-  background-image: url('assets/images/bg.jpg');
+  background-image: url(assets/images/bg.webp);
   background-size: cover;
   background-position: center;
 }
@@ -36,11 +36,12 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10px;
+  background-color: #252422;
   background-color: #bd0000;
   border-radius: 50%;
   transition: 300ms;
   a{
-    width: 100px;
+    width: 10vw;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -53,12 +54,25 @@ body {
     fill: snow;
   }
   a:hover svg{
-    padding-top: 4px;
+    scale: 1.1;
     height: 28px;
     transition: 100ms;
-    cursor: default;
-    fill: #808080;
   }
+}
+.mail:hover{
+  fill: rgb(177, 11, 11);
+}
+.X:hover{
+  fill: silver;
+}
+.linkedin:hover{
+  fill: rgb(12, 133, 231);
+}
+.github:hover{
+  fill: silver;
+}
+.instagram:hover{
+  fill: #e1306c;
 }
 .top-nav:hover .social-links{
   width: 50vw;
@@ -125,7 +139,6 @@ body {
   }
   a:hover svg{
     fill: #bd0000;
-    filter: drop-shadow(0px 0px 5px #252422);
   }
   a{
     cursor: default;
