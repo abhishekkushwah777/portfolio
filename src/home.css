@@ -131,7 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   svg{
     fill: #252422;
     width: 24px;
@@ -141,12 +141,28 @@ body {
     fill: #bd0000;
   }
   a{
-    cursor: default;
+    display: flex;
+    align-items: center;
     opacity: 0;
     transform: translateY(50%);
     transition: 100ms;
+    span{
+      margin-left: 8px;
+      font-size: 18px;
+      font-family: Goldman, cursive;
+      color: #252422;
+      max-width: 0px;
+      overflow: hidden;
+      transition: max-width 300ms ease-in-out;
+    }
+    }
   }
-}
+  a:hover{
+      span{
+        max-width: 150px;
+        transition: max-width 300ms ease-in-out;
+      }
+  }    
 .bottom-nav:hover a{
   opacity: 1;
   transform: translateY(0);
