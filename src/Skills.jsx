@@ -42,40 +42,8 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills-container">
-      <nav className="page-nav">
-        <Link to="/" className="back-button">
-          <i className="fas fa-arrow-left"></i> Back to Home
-        </Link>
-      </nav>
-      
-      <div className="content">
-        <h1 className="page-title">Skills</h1>
-        
-        <div className="skills-grid">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="skill-category">
-              <h3 className="category-title">{category.category}</h3>
-              
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    <div className="skill-name">{skill.name}</div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-progress" 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                    <div className="skill-percentage">{skill.level}%</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+   <>
+   </>
   );
 };
 
