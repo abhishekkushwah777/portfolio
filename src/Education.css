@@ -1,16 +1,112 @@
-.container{
-  height: 200px;
+.education-page{
+  position: absolute;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/images/edu-bg.webp);
+  backdrop-filter: brightness(30%);
+  background-size: cover;
+  background-position: center;
+}
+.back-btn{
+  position: absolute;
+  top: 20px;
+  height: 10vh;
+  width: 80px;
+  z-index: 10;
+  font-family: lexend, sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: rgba(255, 250, 250, 0.521);
+  padding: 5px 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-btn:hover{
+    color: #bd0000;
+    background-color: black;
+    border: none;
+}
+.edu-nav{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
   width: 100vw;
+  background-color: rgba(255, 250, 250, 0.521);
+  border: 2px solid black;
+  h2{
+    font-family: lexend, sans-serif;
+    font-size: 32px;
+    color: black;
+  }
 }
-.container:nth-child(3){
-  background-color: #f44336;
+.edu-main{
+  margin: 5px 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  backdrop-filter: blur(5px);
+  border: 2px solid black;
+  height: 85vh;
 }
-.container:nth-child(4){
-  background-color: #d1f436;
+.edu-left-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: lexend, sans-serif;
+    font-size: 36px;
+    -webkit-text-stroke: black 1px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border:  1px solid black;
+  }
+  h3:hover{
+    color: #bd0000;
+  }
 }
-.container:nth-child(5){
-  background-color: #36f436;
+.edu-right-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-.container:nth-child(6){
-  background-color: #36bef4;
+.edu-right-container::-webkit-scrollbar{
+  display: none;
+}
+.testdiv{
+  width: 90%;
+  min-height: 150px;
+  margin: 10px 0;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  h3{
+    font-family: lexend, sans-serif;
+    font-size: 28px;
+    -webkit-text-stroke: black 1px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  p{
+    font-family: lexend, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+  }
 }
