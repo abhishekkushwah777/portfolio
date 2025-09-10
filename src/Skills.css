@@ -1,0 +1,73 @@
+.skills-main{
+    margin: 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    overflow-y: scroll;
+}
+.skill-category{
+    height: 30vh;
+    background-color: hsla(0, 0%, 94%, 0.5);
+    border: 2px solid black;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    h3{
+        margin-bottom: 15px;
+        font-size: 28px;
+        font-family: lexend, sans-serif;
+        color: black;
+    }
+}
+.skills{
+    width: 100%;
+}
+.skill{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        background-color: black;
+        mask-size: contain;
+    } 
+    h4{
+        width: fit-content;
+        font-family: lexend, sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+    h4:hover{
+        color: #bd0000;
+    }
+    span{
+        width: 60px;
+        font-family: lexend, sans-serif;
+        font-size: 16px;
+        color: black;
+        margin-right: 10px;
+    }
+}
+.skill-left{
+    display: flex;
+    flex-direction: row;
+}
+.progress-bar{
+    align-items: start;
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    border: 1px solid black;
+}
+.progress{
+    height: 100%;
+    background-color: #bd0000;
+}

@@ -60,7 +60,7 @@ body {
   }
 }
 .mail:hover{
-  fill: rgb(177, 11, 11);
+  fill: #f55a5a;
 }
 .X:hover{
   fill: silver;
@@ -72,12 +72,12 @@ body {
   fill: silver;
 }
 .instagram:hover{
-  fill: #e1306c;
+  fill: #d32047;
 }
 .top-nav:hover .social-links{
   width: 50vw;
   background-color: #252422;
-  border-radius: 99px;
+  border-radius: 10px;
   transition: 300ms;
   opacity: 1;
   a{
